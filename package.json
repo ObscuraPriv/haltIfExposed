@@ -1,0 +1,14 @@
+{
+  "name": "obscura-privacy",
+  "version": "0.1.0",
+  "private": false,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/packages/cli/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
