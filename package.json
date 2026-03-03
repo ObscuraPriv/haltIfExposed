@@ -1,11 +1,35 @@
 {
-  "name": "obscura-privacy",
-  "version": "0.1.0",
+  "name": "@obscura/privacy-runtime",
+  "version": "0.1.0-alpha",
+  "description": "Deterministic zero-trust enforcement runtime aligned with Conway architecture.",
   "private": false,
   "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
-    "start": "node dist/packages/cli/index.js"
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "conway",
+    "privacy",
+    "zero-trust",
+    "deterministic",
+    "security",
+    "runtime",
+    "agents"
+  ],
+  "author": "Obscura Protocol",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ObscuraPriv/haltIfExposed.git"
   },
   "dependencies": {},
   "devDependencies": {
